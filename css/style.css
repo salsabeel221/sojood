@@ -1,0 +1,151 @@
+
+body {
+overflow: hidden;
+  background-image: url(../imges/Header-2.gif);
+  background-size: cover !important;
+  background-repeat: no-repeat;
+  height: 100vh !important;
+  width: 100% !important;
+
+  background-attachment: fixed;
+  background-position:  center;
+}
+.title{
+  z-index: 11111111111111111111;
+}
+h1 {
+  font-family: 'Lato', sans-serif;
+  font-weight:300;
+  letter-spacing: 2px;
+  font-size:48px;
+}
+p {
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 1px;
+  font-size:14px;
+  color: #333333;
+}
+
+.header {
+  position:relative;
+  text-align:center;
+
+  color:white;
+}
+.logo {
+  width:50px;
+  fill:white;
+  padding-right:15px;
+  display:inline-block;
+  vertical-align: middle;
+}
+
+.inner-header {
+
+  width:100%;
+  margin: 0;
+  padding: 0;
+}
+
+.flex { /*Flexbox for containers*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+
+
+
+/* Animation */
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+   transform: translate3d(-90px,0,0);
+  }
+  100% { 
+    transform: translate3d(85px,0,0);
+  }
+}
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+
+ 
+  h1 {
+    font-size:24px;
+  }
+
+  .logo-icon img{
+    border-radius: 50%;
+ margin-top: 5px;
+
+  
+  }
+  .btn{
+    width: 30vh !important;
+  }
+}
+a{
+  text-decoration: none !important;
+}
+/*  */
+.logo-icon img{
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin-top: 20vh;
+
+}
+h2 ,h4{
+  font-family: 'Tajawal', sans-serif;
+  font-weight: 600;
+  color: #000;
+}
+h4{
+  font-weight: 600;
+
+}
+.icons i{
+
+
+color: #000;
+font-size: 23px;
+}
+
+.icons a{
+  font-size: 20px;
+ color: #000;
+ font-weight: 400;
+}
+.icons a:hover{
+  color: #4b2f1e;
+}
+
+.btn{
+  width: 50vh;
+  background-color: #f4ddcd;
+  border-color: #f4ddcd;
+}.btn:hover{
+  background-color: #9bc9c7;
+  border-color: #9bc9c7;
+}
